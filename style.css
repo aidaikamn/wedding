@@ -1,0 +1,268 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background: rgb(133, 146, 213);
+  background: radial-gradient(circle, rgba(133, 146, 213, 1) 0%, rgba(225, 160, 173, 1) 69%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
+
+.container {
+  text-align: center;
+}
+
+button {
+  background: linear-gradient(135deg, #ff69b4, #ff1493);
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 35px;
+  cursor: pointer;
+  border-radius: 50px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s ease, transform 0.2s;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #ff1493, #ff69b4);
+  transform: scale(1.05);
+}
+
+button:active {
+  transform: scale(1);
+}
+
+#invitation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background: url('./img/wedding.jfif') no-repeat center center;
+  background-size: cover; /* Растягивает изображение по экрану */
+}
+
+.invitation-content {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+  width: 70%;
+  max-width: 600px;
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.3);
+  animation: fadeIn 0.5s ease;
+}
+
+h1 {
+  font-size: 42px;
+  color: #ff1493;
+  font-family: 'Georgia', serif;
+  margin-bottom: 15px;
+}
+
+p {
+  font-size: 20px;
+  line-height: 1.6;
+  color: #444;
+  margin: 10px 0;
+}
+
+#closeBtn {
+  background: #ff1493;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  font-size: 25px;
+  cursor: pointer;
+  border-radius: 25px;
+  margin-top: 20px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s ease, transform 0.2s;
+}
+
+#closeBtn:hover {
+  background: #ff69b4;
+  transform: scale(1.05);
+}
+
+#closeBtn:active {
+  transform: scale(1);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+@media (max-width: 1440px) {
+  .invitation-content {
+    width: 80%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .invitation-content {
+    width: 85%;
+  }
+}
+
+@media (max-width: 1024px) {
+  button {
+    font-size: 28px;
+  }
+
+  .invitation-content {
+    width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  button {
+    font-size: 24px;
+    padding: 12px 25px;
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+
+  .invitation-content {
+    width: 95%;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  button {
+    font-size: 22px;
+    padding: 10px 20px;
+  }
+
+  .invitation-content {
+    width: 85%;
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  #closeBtn {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 451px) {
+  button {
+    font-size: 18px;
+    padding: 8px 16px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  .invitation-content {
+    width: 90%;
+    padding: 10px;
+  }
+
+  #closeBtn {
+    font-size: 18px;
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 400px) {
+  button {
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  .invitation-content {
+    width: 95%;
+    padding: 8px;
+  }
+
+  #closeBtn {
+    font-size: 16px;
+    padding: 8px 18px;
+  }
+  p {
+    font-size: 17px;
+    margin: 3px 0;
+}
+}
+
+@media (max-width: 376px) {
+  
+
+
+  @media (max-width: 376px) {
+    .invitation-content {
+        width: 90%;
+        padding: 6px;
+    }
+    button {
+      font-size: 14px;
+      padding: 6px 14px;
+    }
+    p {
+      font-size: 16px;
+  }
+  
+  h1 {
+    font-size: 20px;
+  margin-bottom: 5px;
+
+  }
+}
+
+  #closeBtn {
+    font-size: 14px;
+    padding: 6px 16px;
+    margin-top: 3px;
+  }
+}
+
+@media (max-width: 320px) {
+  button {
+    font-size: 14px;
+    padding: 6px 14px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  .invitation-content {
+    width: 85%;
+    padding: 15px;
+}
+
+  #closeBtn {
+    font-size: 14px;
+    padding: 6px 14px;
+  }
+}
